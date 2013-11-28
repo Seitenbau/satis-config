@@ -1,0 +1,66 @@
+{
+    "name": "SB Repo",
+    "homepage": "http://satis",
+    "repositories": [
+	{ "type": "composer", "url": "https://packagist.org" },
+	{ "type": "composer", "url": "https://packages.zendframework.com/" },
+        { "type": "git", "url": "https://github.com/summon/Summon.php.git" },
+	{ "type": "git", "url": "https://github.com/bohnejoe/vufind.git" },
+	{
+	    "type": "package",
+            "package": {
+                "name": "concrete5/concrete5",
+                "version": "5.7.0",
+                "dist": {
+                    "url": "https://github.com/concrete5/concrete5/archive/5.7.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mobileesp/mdetect",
+                "version": "dev-master",
+                "dist": {
+                    "url": "http://mobileesp.googlecode.com/svn/PHP/mdetect.php",
+                    "type": "file"
+                },
+                "autoload": {
+                    "classmap": ["/"]
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "johnwohlers/sip2",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://php-sip2.googlecode.com/svn/tags/version_0.95RC3/sip2.class.php",
+                    "type": "file"
+                },
+                "autoload": {
+                    "classmap": ["/"]
+                }
+            }
+        }
+    ],
+    "prefer-stability": true,
+    "require-dependencies": true,
+    "require": {
+	"johnwohlers/sip2": "*",
+        "mobileesp/mdetect": "*",
+	"serialssolutions/summon": "*",
+	"phpunit/phpunit": "*",
+	"concrete5/concrete5": "5.7.0",
+	"vufind/vufind": "2.1.2"
+    },
+    "archive": {
+        "directory": "dist",
+        "format": "zip",
+        "prefix-url": "http://satis",
+        "skip-dev": false
+    }
+}
+
