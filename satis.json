@@ -10,9 +10,9 @@
 	    "type": "package",
             "package": {
                 "name": "concrete5/concrete5",
-                "version": "5.7.0",
+                "version": "5.6.2.1",
                 "dist": {
-                    "url": "https://github.com/concrete5/concrete5/archive/5.7.0.zip",
+                    "url": "https://github.com/concrete5/concrete5/archive/5.6.2.1.zip",
                     "type": "zip"
                 }
             }
@@ -53,7 +53,7 @@
         "mobileesp/mdetect": "*",
 	"serialssolutions/summon": "*",
 	"phpunit/phpunit": "*",
-	"concrete5/concrete5": "5.7.0",
+	"concrete5/concrete5": "5.6.2.1",
 	"vufind/vufind": "2.1.2"
     },
     "archive": {
